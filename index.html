@@ -33,20 +33,10 @@ body[data-emocao="ansioso"] {
   background-color: #fbe2e5;
   color: #1a1a1a;
 }
-
-/* Suave transição entre cores */
-body {
-  transition: background-color 0.8s ease, color 0.5s ease;
-}
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Quando o jogador entra numa passagem, altera o fundo dependendo da emoção guardada
-$(document).on(':passagerender', function () {
-  const emo = State.getVar('$emocao');
-  $('body').attr('data-emocao', emo || '');
-});
-</script><tw-passagedata pid="1" name="Start" tags="" position="600,400" size="100,100">Bem-vindo ao Mapa Emocional – Diário da Cidade.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="600,400" size="100,100">Bem-vindo ao Mapa Emocional – Diário da Cidade.
 Neste percurso emocional, vais registar como te sentes em diferentes pontos da cidade. No final, verás o teu &quot;mapa emocional&quot;. 
 
-[[Começar-&gt;Cemitério dos Prazeres]] 
+[[Começar-&gt;Cemiterio]] 
 
 (set: $emocao1 to &quot;&quot;)
 (set: $emocao2 to &quot;&quot;)
@@ -58,121 +48,122 @@ Neste percurso emocional, vais registar como te sentes em diferentes pontos da c
   (goto: (URL-param: &quot;passage&quot;))
 ]
 
-</tw-passagedata><tw-passagedata pid="2" name="Cemitério dos Prazeres" tags="" position="900,400" size="100,100">Estás no Cemitério dos Prazeres.
+
+</tw-passagedata><tw-passagedata pid="2" name="Cemiterio" tags="" position="900,400" size="100,100">Estás no Cemitério dos Prazeres.
 &lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/cemiterio_prazeres1.jpg&quot;/&gt;
 Este lugar é associado à tristeza.
 
 Como te sentes aqui?
-[[😢 Triste-&gt;Cemitério-Triste]]
-[[😐 Indiferente-&gt;Cemitério-Indiferente]]
-[[😊 Em paz-&gt;Cemitério-Em paz]]</tw-passagedata><tw-passagedata pid="3" name="Cemitério-Triste" tags="" position="700,600" size="100,100">(set: $emocao1 to &quot;triste&quot;)
+[[😢 Triste-&gt;CemiterioTriste]]
+[[😐 Indiferente-&gt;CemiterioIndiferente]]
+[[😊 Em paz-&gt;CemiterioPaz]]</tw-passagedata><tw-passagedata pid="3" name="CemiterioTriste" tags="" position="700,600" size="100,100">(set: $emocao1 to &quot;triste&quot;)
 &quot;Neste silêncio, até os sentimentos ganham eco.&quot;
 
 67% dos utilizadores selecionaram a mesma resposta.
 
 
 Vamos seguir para o próximo ponto?
-[[Continuar-&gt;Parque Eduardo VII]]</tw-passagedata><tw-passagedata pid="4" name="Cemitério-Indiferente" tags="" position="900,600" size="100,100">(set: $emocao1 to &quot;indiferente&quot;)
+[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="4" name="CemiterioIndiferente" tags="" position="900,600" size="100,100">(set: $emocao1 to &quot;indiferente&quot;)
 &quot;Nem sempre os lugares nos tocam – e está tudo bem.&quot;
 18% dos utilizadores disseram o mesmo.
 
 
 Vamos seguir para o próximo ponto?
-[[Continuar-&gt;Parque Eduardo VII]]</tw-passagedata><tw-passagedata pid="5" name="Cemitério-Em paz" tags="" position="1100,600" size="100,100">(set: $emocao1 to &quot;em paz&quot;)
+[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="5" name="CemiterioPaz" tags="" position="1100,600" size="100,100">(set: $emocao1 to &quot;em paz&quot;)
 &quot;Aqui repousa a calma, entre ciprestes e memórias.&quot;
 
 15% dos utilizadores também se sentiram em paz aqui.
 
 
 Vamos seguir para o próximo ponto?
-[[Continuar-&gt;Parque Eduardo VII]]</tw-passagedata><tw-passagedata pid="6" name="Parque Eduardo VII" tags="" position="900,800" size="100,100">Estás no Parque Eduardo VII.
+[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="6" name="Parque" tags="" position="900,800" size="100,100">Estás no Parque Eduardo VII.
 
 Um local onde se respira serenidade.
 
 
 Como te sentes aqui?
-[[🧘‍♂️ Calmo-&gt;Parque-Calmo]]
-[[😌 Sereno-&gt;Parque-Sereno]]
-[[🤷‍♀️ Nada especial-&gt;Parque-Nada Especial]]</tw-passagedata><tw-passagedata pid="7" name="Parque-Calmo" tags="" position="900,1000" size="100,100">(set: $emocao2 to &quot;calmo&quot;)
+[[🧘‍♂️ Calmo-&gt;ParqueCalmo]]
+[[😌 Sereno-&gt;ParqueSereno]]
+[[🤷‍♀️ Nada especial-&gt;ParqueNadaEspecial]]</tw-passagedata><tw-passagedata pid="7" name="ParqueCalmo" tags="" position="900,1000" size="100,100">(set: $emocao2 to &quot;calmo&quot;)
 &quot;A natureza não julga: apenas acolhe.&quot;
 
 58% sentiram-se assim.
 
-[[Continuar-&gt;Miradouro Nossa Senhora do Monte]] </tw-passagedata><tw-passagedata pid="8" name="Miradouro Nossa Senhora do Monte" tags="" position="900,1200" size="100,100">Estás no Miradouro da Nossa do Monte!
+[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="8" name="Miradouro" tags="" position="900,1200" size="100,100">Estás no Miradouro da Nossa do Monte!
 Muitos sentem alegria aqui.
 
 Como te sentes aqui?
-[[😄 Feliz-&gt;Miradouro - Feliz]]
-[[😶 Neutro-&gt;Miradouro - Neutro]]
-[[😞 Desconfortável-&gt;Miradouro - Desconfortável]]</tw-passagedata><tw-passagedata pid="9" name="Metro da Baixa-Chiado" tags="" position="900,1600" size="100,100">Estás na estação de metro da Baixa-Chiado.
+[[😄 Feliz-&gt;MiradouroFeliz]]
+[[😶 Neutro-&gt;MiradouroNeutro]]
+[[😞 Desconfortável-&gt;MiradouroDesconfortavel]]</tw-passagedata><tw-passagedata pid="9" name="Metro" tags="" position="900,1600" size="100,100">Estás na estação de metro da Baixa-Chiado.
 É um lugar conhecido por provocar ansiedade.
 
 
 Como te sentes aqui?
-[[😰 Ansioso-&gt;Baixa - Ansioso]]
-[[😴 Cansado-&gt;Baixa - Cansado]]
-[[😎 Tranquilo-&gt;Baixa - Tranquilo]]</tw-passagedata><tw-passagedata pid="10" name="Cais do Sodré" tags="" position="900,2000" size="100,100">Estás no Cais do Sodré à noite.
+[[😰 Ansioso-&gt;BaixaAnsioso]]
+[[😴 Cansado-&gt;BaixaCansado]]
+[[😎 Tranquilo-&gt;BaixaTranquilo]]</tw-passagedata><tw-passagedata pid="10" name="Cais" tags="" position="900,2000" size="100,100">Estás no Cais do Sodré à noite.
 
 
 Aqui mistura-se excitação com confusão.
 
 Como te sentes aqui?
-[[🤩 Entusiasmado-&gt;Cais - Entusiasmado]]
-[[😵 Confuso-&gt;Cais - Confuso]]
-[[😐 Neutro-&gt;Cais - Neutro]]
-</tw-passagedata><tw-passagedata pid="11" name="Parque-Nada Especial" tags="" position="1100,1000" size="100,100">(set: $emocao2 to &quot;nada especial&quot;)
+[[🤩 Entusiasmado-&gt;CaisEntusiasmado]]
+[[😵 Confuso-&gt;CaisConfuso]]
+[[😐 Neutro-&gt;CaisNeutro]]
+</tw-passagedata><tw-passagedata pid="11" name="ParqueNadaEspecial" tags="" position="1100,1000" size="100,100">(set: $emocao2 to &quot;nada especial&quot;)
 &quot;Nem sempre estamos sintonizados com o lugar – e está tudo bem.&quot;
 
 10% disseram o mesmo.
-[[Continuar-&gt;Miradouro Nossa Senhora do Monte]] </tw-passagedata><tw-passagedata pid="12" name="Parque-Sereno" tags="" position="700,1000" size="100,100">(set: $emocao2 to &quot;sereno&quot;)
+[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="12" name="ParqueSereno" tags="" position="700,1000" size="100,100">(set: $emocao2 to &quot;sereno&quot;)
 &quot;Há paz na harmonia natural.&quot;
 
 32% concordam contigo.
 
-[[Continuar-&gt;Miradouro Nossa Senhora do Monte]] </tw-passagedata><tw-passagedata pid="13" name="Miradouro - Feliz" tags="" position="700,1400" size="100,100">(set: $emocao3 to &quot;feliz&quot;)
+[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="13" name="MiradouroFeliz" tags="" position="700,1400" size="100,100">(set: $emocao3 to &quot;feliz&quot;)
 &quot;Sentir alegria aqui é como abrir o peito ao horizonte.&quot;
 
 72% sentiram o mesmo.
 
-[[Continuar-&gt;Metro da Baixa-Chiado]] </tw-passagedata><tw-passagedata pid="14" name="Miradouro - Neutro" tags="" position="900,1400" size="100,100">(set: $emocao3 to &quot;neutro&quot;)
+[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="14" name="MiradouroNeutro" tags="" position="900,1400" size="100,100">(set: $emocao3 to &quot;neutro&quot;)
 &quot;A neutralidade também é válida.&quot;
 
 19% escolheram esta emoção.
 
-[[Continuar-&gt;Metro da Baixa-Chiado]] </tw-passagedata><tw-passagedata pid="15" name="Miradouro - Desconfortável" tags="" position="1100,1400" size="100,100">(set: $emocao3 to &quot;desconfortável&quot;)
+[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="15" name="MiradouroDesconfortavel" tags="" position="1100,1400" size="100,100">(set: $emocao3 to &quot;desconfortável&quot;)
 &quot;Às vezes, até os lugares bonitos nos pesam.&quot;
 
 9% sentiram o mesmo.
 
-[[Continuar-&gt;Metro da Baixa-Chiado]] </tw-passagedata><tw-passagedata pid="16" name="Baixa - Ansioso" tags="" position="700,1800" size="100,100">(set: $emocao4 to &quot;ansioso&quot;)
+[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="16" name="BaixaAnsioso" tags="" position="700,1800" size="100,100">(set: $emocao4 to &quot;ansioso&quot;)
 &quot;O ruído urbano amplifica as tensões invisíveis.&quot;
 
 63% sentiram-se assim.
 
 
-[[Continuar-&gt;Cais do Sodré]] </tw-passagedata><tw-passagedata pid="17" name="Baixa - Cansado" tags="" position="900,1800" size="100,100">(set: $emocao4 to &quot;cansado&quot;)
+[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="17" name="BaixaCansado" tags="" position="900,1800" size="100,100">(set: $emocao4 to &quot;cansado&quot;)
 &quot;O movimento constante esgota.&quot;
 
 24% também se sentiram assim.
 
 
-[[Continuar-&gt;Cais do Sodré]] </tw-passagedata><tw-passagedata pid="18" name="Baixa - Tranquilo" tags="" position="1100,1800" size="100,100">(set: $emocao4 to &quot;tranquilo&quot;)
+[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="18" name="BaixaTranquilo" tags="" position="1100,1800" size="100,100">(set: $emocao4 to &quot;tranquilo&quot;)
 &quot;Mesmo no caos, há quem encontre o seu ritmo.&quot;
 
 13% disseram o mesmo.
 
-[[Continuar-&gt;Cais do Sodré]] </tw-passagedata><tw-passagedata pid="19" name="Cais - Entusiasmado" tags="" position="700,2200" size="100,100">(set: $emocao5 to &quot;entusiasmado&quot;)
+[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="19" name="CaisEntusiasmado" tags="" position="700,2200" size="100,100">(set: $emocao5 to &quot;entusiasmado&quot;)
 &quot;Há lugares que nos ligam à energia bruta da cidade.&quot;
 
 44% disseram o mesmo.
 
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="20" name="Cais - Confuso" tags="" position="900,2200" size="100,100">(set: $emocao5 to &quot;confuso&quot;)
+[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="20" name="CaisConfuso" tags="" position="900,2200" size="100,100">(set: $emocao5 to &quot;confuso&quot;)
 &quot;Às vezes, a multidão faz mais barulho dentro do que fora.&quot;
 
 47% sentiram-se assim.
 
 
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="21" name="Cais - Neutro" tags="" position="1100,2200" size="100,100">(set: $emocao5 to &quot;neutro&quot;)
+[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="21" name="CaisNeutro" tags="" position="1100,2200" size="100,100">(set: $emocao5 to &quot;neutro&quot;)
 &quot;Navegar entre extremos também é válido.&quot;
 
 

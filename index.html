@@ -19,20 +19,6 @@ tw-link {
   color: #0066cc;
   font-weight: bold;
 }
-body[data-emocao="triste"] {
-  background-color: #cce1f2;
-  color: #1a1a1a;
-}
-
-body[data-emocao="feliz"] {
-  background-color: #fff6cc;
-  color: #1a1a1a;
-}
-
-body[data-emocao="ansioso"] {
-  background-color: #fbe2e5;
-  color: #1a1a1a;
-}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="600,400" size="100,100">Bem-vindo ao Mapa Emocional – Diário da Cidade.
 Neste percurso emocional, vais registar como te sentes em diferentes pontos da cidade. No final, verás o teu &quot;mapa emocional&quot;. 
 
@@ -43,144 +29,185 @@ Neste percurso emocional, vais registar como te sentes em diferentes pontos da c
 (set: $emocao3 to &quot;&quot;)
 (set: $emocao4 to &quot;&quot;)
 (set: $emocao5 to &quot;&quot;)
-
-(if: (URL-param: &quot;passage&quot;) is not &quot;&quot;)[
-  (goto: (URL-param: &quot;passage&quot;))
-]
-
-
-</tw-passagedata><tw-passagedata pid="2" name="Cemiterio" tags="" position="900,400" size="100,100">Estás no Cemitério dos Prazeres.
+</tw-passagedata><tw-passagedata pid="2" name="Cemiterio" tags="" position="900,400" size="100,100">Chegas ao Cemitério dos Prazeres.
 &lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/cemiterio_prazeres1.jpg&quot;/&gt;
-Este lugar é associado à tristeza.
 
-Como te sentes aqui?
+O silêncio é espesso...
+O ar parece suspenso entre memórias que não são tuas.
+Os passos fazem eco.  
+Há beleza, há silêncio, há peso. Nem tudo é tristeza — mas nada é leve.
+
+Como te sentes neste lugar?
 [[😢 Triste-&gt;CemiterioTriste]]
 [[😐 Indiferente-&gt;CemiterioIndiferente]]
 [[😊 Em paz-&gt;CemiterioPaz]]</tw-passagedata><tw-passagedata pid="3" name="CemiterioTriste" tags="" position="700,600" size="100,100">(set: $emocao1 to &quot;triste&quot;)
-&quot;Neste silêncio, até os sentimentos ganham eco.&quot;
 
-67% dos utilizadores selecionaram a mesma resposta.
+O peso do lugar assentou-te nos ombros como um casaco velho. Era como se estivesses a carregar memórias que nem eram tuas.
 
+67% dos utilizadores selecionaram a mesma resposta.  
+Neste silêncio, até os sentimentos ganham eco.
 
-Vamos seguir para o próximo ponto?
+Volta ao SmartGuide e avança para o próximo ponto. 
 [[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="4" name="CemiterioIndiferente" tags="" position="900,600" size="100,100">(set: $emocao1 to &quot;indiferente&quot;)
+Caminhaste entre túmulos como quem percorre um corredor sem portas. Nada te tocou — e talvez isso te tenha surpreendido.
+
 &quot;Nem sempre os lugares nos tocam – e está tudo bem.&quot;
 18% dos utilizadores disseram o mesmo.
 
 
-Vamos seguir para o próximo ponto?
+Volta ao SmartGuide e avança para o próximo ponto. 
 [[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="5" name="CemiterioPaz" tags="" position="1100,600" size="100,100">(set: $emocao1 to &quot;em paz&quot;)
-&quot;Aqui repousa a calma, entre ciprestes e memórias.&quot;
+No silêncio entre as lápides, sentiste que o mundo te deixou respirar. Como se ali, no meio da morte, tivesses encontrado descanso.
 
+&quot;Aqui repousa a calma, entre ciprestes e memórias.&quot;
 15% dos utilizadores também se sentiram em paz aqui.
 
 
-Vamos seguir para o próximo ponto?
-[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="6" name="Parque" tags="" position="900,800" size="100,100">Estás no Parque Eduardo VII.
+Volta ao SmartGuide e avança para o próximo ponto. 
+[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="6" name="Parque" tags="" position="900,800" size="100,100">O verde à tua volta respira devagar.
 
-Um local onde se respira serenidade.
+O chão é mole, o vento empurra folhas com leveza, e por um instante, a cidade parece ficar lá em baixo, distante. 
 
+Aqui, há espaço para ti — se quiseres ocupá-lo.
 
-Como te sentes aqui?
+Como te sentes neste lugar?
 [[🧘‍♂️ Calmo-&gt;ParqueCalmo]]
 [[😌 Sereno-&gt;ParqueSereno]]
 [[🤷‍♀️ Nada especial-&gt;ParqueNadaEspecial]]</tw-passagedata><tw-passagedata pid="7" name="ParqueCalmo" tags="" position="900,1000" size="100,100">(set: $emocao2 to &quot;calmo&quot;)
-&quot;A natureza não julga: apenas acolhe.&quot;
+No verde do parque, respiraste fundo. O corpo abrandou, como se soubesse que podia.
 
+&quot;A natureza não julga: apenas acolhe.&quot;
 58% sentiram-se assim.
 
-[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="8" name="Miradouro" tags="" position="900,1200" size="100,100">Estás no Miradouro da Nossa do Monte!
-Muitos sentem alegria aqui.
+[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="8" name="Miradouro" tags="" position="900,1200" size="100,100">Do topo da colina, a cidade abre-se como uma carta que alguém escreveu para ti.  
+O sol desenha reflexos nos telhados, turistas riem ao fundo, e mesmo assim — há uma solidão suspensa no ar.  
+Aqui tudo parece pequeno, mesmo as tuas emoções.
 
 Como te sentes aqui?
 [[😄 Feliz-&gt;MiradouroFeliz]]
 [[😶 Neutro-&gt;MiradouroNeutro]]
-[[😞 Desconfortável-&gt;MiradouroDesconfortavel]]</tw-passagedata><tw-passagedata pid="9" name="Metro" tags="" position="900,1600" size="100,100">Estás na estação de metro da Baixa-Chiado.
-É um lugar conhecido por provocar ansiedade.
-
+[[😞 Desconfortável-&gt;MiradouroDesconfortavel]]</tw-passagedata><tw-passagedata pid="9" name="Metro" tags="" position="900,1600" size="100,100">Desceste ao ventre da cidade.  
+O som metálico dos comboios, os passos apressados, os olhares evitados. Tudo pulsa — mas ninguém se olha.  
+Há um ritmo aqui que nem sempre é o teu. E no meio dele, tu.
 
 Como te sentes aqui?
 [[😰 Ansioso-&gt;BaixaAnsioso]]
 [[😴 Cansado-&gt;BaixaCansado]]
-[[😎 Tranquilo-&gt;BaixaTranquilo]]</tw-passagedata><tw-passagedata pid="10" name="Cais" tags="" position="900,2000" size="100,100">Estás no Cais do Sodré à noite.
+[[😎 Tranquilo-&gt;BaixaTranquilo]]</tw-passagedata><tw-passagedata pid="10" name="Cais" tags="" position="900,2000" size="100,100">A cidade pulsa. Sons, cheiros, vozes. A música escapa dos bares como vapor quente.  
+Cada rosto parece uma história a acontecer — e tu és um entre muitos.  
 
-
-Aqui mistura-se excitação com confusão.
+Estás no coração da noite urbana.  
 
 Como te sentes aqui?
 [[🤩 Entusiasmado-&gt;CaisEntusiasmado]]
 [[😵 Confuso-&gt;CaisConfuso]]
 [[😐 Neutro-&gt;CaisNeutro]]
 </tw-passagedata><tw-passagedata pid="11" name="ParqueNadaEspecial" tags="" position="1100,1000" size="100,100">(set: $emocao2 to &quot;nada especial&quot;)
+O parque não te disse nada — e talvez isso também seja importante. Nem tudo tem de tocar.
+
 &quot;Nem sempre estamos sintonizados com o lugar – e está tudo bem.&quot;
-
 10% disseram o mesmo.
-[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="12" name="ParqueSereno" tags="" position="700,1000" size="100,100">(set: $emocao2 to &quot;sereno&quot;)
-&quot;Há paz na harmonia natural.&quot;
 
+[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="12" name="ParqueSereno" tags="" position="700,1000" size="100,100">(set: $emocao2 to &quot;sereno&quot;)
+No silêncio natural, houve espaço para um alívio que não sabias que procuravas. Um espaço sem exigência.
+
+&quot;Há paz na harmonia natural.&quot;
 32% concordam contigo.
 
 [[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="13" name="MiradouroFeliz" tags="" position="700,1400" size="100,100">(set: $emocao3 to &quot;feliz&quot;)
-&quot;Sentir alegria aqui é como abrir o peito ao horizonte.&quot;
+Do alto, deixaste-te contagiar pela luz. Por instantes, foste leve.
 
+&quot;Sentir alegria aqui é como abrir o peito ao horizonte.&quot;
 72% sentiram o mesmo.
 
 [[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="14" name="MiradouroNeutro" tags="" position="900,1400" size="100,100">(set: $emocao3 to &quot;neutro&quot;)
-&quot;A neutralidade também é válida.&quot;
+Do alto, viste tudo… mas nada se moveu por dentro. Um miradouro com vista, mas sem eco.
 
+&quot;A neutralidade também é válida.&quot;
 19% escolheram esta emoção.
 
 [[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="15" name="MiradouroDesconfortavel" tags="" position="1100,1400" size="100,100">(set: $emocao3 to &quot;desconfortável&quot;)
-&quot;Às vezes, até os lugares bonitos nos pesam.&quot;
+Mesmo com a cidade aberta à frente, algo te pesou no peito. A beleza não foi suficiente para te aliviar.
 
+&quot;Às vezes, até os lugares bonitos nos pesam.&quot;
 9% sentiram o mesmo.
 
 [[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="16" name="BaixaAnsioso" tags="" position="700,1800" size="100,100">(set: $emocao4 to &quot;ansioso&quot;)
-&quot;O ruído urbano amplifica as tensões invisíveis.&quot;
+No subsolo da cidade, a ansiedade apertou-te o peito. Cada som, cada passo, parecia empurrar-te mais para dentro.
 
+&quot;O ruído urbano amplifica as tensões invisíveis.&quot;
 63% sentiram-se assim.
 
 
 [[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="17" name="BaixaCansado" tags="" position="900,1800" size="100,100">(set: $emocao4 to &quot;cansado&quot;)
-&quot;O movimento constante esgota.&quot;
+O movimento da Baixa arrastou-te. Foste contigo próprio em piloto automático, à deriva no fluxo da cidade.
 
+&quot;O movimento constante esgota.&quot;
 24% também se sentiram assim.
 
 
 [[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="18" name="BaixaTranquilo" tags="" position="1100,1800" size="100,100">(set: $emocao4 to &quot;tranquilo&quot;)
-&quot;Mesmo no caos, há quem encontre o seu ritmo.&quot;
+Mesmo entre multidões, encontraste o teu próprio ritmo. Andavas por ali como quem dança em silêncio.
 
+&quot;Mesmo no caos, há quem encontre o seu ritmo.&quot;
 13% disseram o mesmo.
 
 [[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="19" name="CaisEntusiasmado" tags="" position="700,2200" size="100,100">(set: $emocao5 to &quot;entusiasmado&quot;)
-&quot;Há lugares que nos ligam à energia bruta da cidade.&quot;
+No Cais do Sodré, foste atravessado por energia crua. Quase dançaste com a cidade. Era ruído, mas era teu.
 
+&quot;Há lugares que nos ligam à energia bruta da cidade.&quot;
 44% disseram o mesmo.
 
 [[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="20" name="CaisConfuso" tags="" position="900,2200" size="100,100">(set: $emocao5 to &quot;confuso&quot;)
-&quot;Às vezes, a multidão faz mais barulho dentro do que fora.&quot;
+Entre sons e multidão, perdeste-te um pouco de ti mesmo. Era demasiado, mesmo quando sabias onde estavas.
 
+
+&quot;Às vezes, a multidão faz mais barulho dentro do que fora.&quot;
 47% sentiram-se assim.
 
 
 [[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="21" name="CaisNeutro" tags="" position="1100,2200" size="100,100">(set: $emocao5 to &quot;neutro&quot;)
+O Cais do Sodré foi apenas mais um lugar. Estavas noutro tempo, noutro tom.
+
 &quot;Navegar entre extremos também é válido.&quot;
-
-
 9% escolheram esta emoção.
 
 
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="22" name="Resumo" tags="" position="900,2400" size="100,100">Aqui está o teu mapa emocional:
+[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="22" name="Resumo" tags="" position="900,2400" size="100,100">&lt;div class=&quot;fade-in&quot;&gt;
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+&quot;Começaste no silêncio e terminaste com os pés a dançar. Algo despertou em ti ao longo do caminho.&quot;
+]
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;confuso&quot;)[
+&quot;Do silêncio à confusão — o percurso não deu respostas, mas trouxe movimento.&quot;
+]
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;neutro&quot;)[
+&quot;A tristeza inicial dissipou-se em neutralidade. Talvez não tenhas perdido nada, apenas deixado ir.&quot;
+]
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+&quot;Saíste da apatia e chegaste à vibração. A cidade não ficou indiferente a ti.&quot;
+]
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;confuso&quot;)[
+&quot;Começaste neutro e acabaste confuso — às vezes, o caminho só agita o que estava calmo.&quot;
+]
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;neutro&quot;)[
+&quot;De uma ponta à outra, o mundo passou por ti sem se fixar. Mas mesmo isso é uma forma de sentir.&quot;
+]
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+&quot;Partiste sereno, chegaste vibrante. O mundo não te engoliu — tu é que aceitaste o convite.&quot;
+]
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;confuso&quot;)[
+&quot;Saíste calmo e chegaste desorientado. Talvez o percurso tenha mexido com mais do que esperavas.&quot;
+]
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;neutro&quot;)[
+&quot;Começaste em harmonia e terminaste sem ruído. Um ciclo discreto, mas completo.&quot;
+]
 
-- Cemitério dos Prazeres: sentiste-te **$emocao1**.
-- Parque Eduardo VII: sentiste-te **$emocao2**.
-- Miradouro Nossa Senhora do Monte: sentiste-te **$emocao3**.
-- Metro da Baixa-Chiado: sentiste-te **$emocao4**.
-- Cais do Sodré: sentiste-te **$emocao5**.
+Cada passo teu foi uma resposta. Talvez não ao espaço — mas a ti próprio.
+Obrigado por participares nesta simulação.
 
-Obrigado por participares nesta simulação!
-
-[[Recomeçar|Start]]</tw-passagedata></tw-storydata>
+[[Recomeçar|Start]]
+&lt;/div&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

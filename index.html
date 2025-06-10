@@ -11,15 +11,44 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
 <tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="BABBC780-85D0-4050-9031-895BD762DDFD" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #f3f3f3;
-  color: #333;
+  background-color: #f9f7f4;
+  color: #2e2e2e;
   padding: 2em;
+  line-height: 1.6;
+  padding-top: 1em;
+  display: block;
 }
-tw-link {
-  color: #0066cc;
-  font-weight: bold;
+
+
+tw-sidebar{
+	display:none !important;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="600,400" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Bem-vindo ao Mapa Emocional – Diário da Cidade.]
+
+
+.base_img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  border: 4px solid #d8bfd8; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.base {
+  background-color: #fffafc;
+  border-left: 6px solid #dda0dd;
+  padding: 1.5em;
+  margin: 2em 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 1s ease-in-out;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="600,400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Bem-vindo ao Mapa Emocional – Diário da Cidade.]
 
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Estás prestes a atravessar a cidade de outra forma.  
 Não com os pés — mas com o corpo, com a pele, com o silêncio entre lugares.
@@ -38,9 +67,10 @@ Ouve e dá a tua resposta aqui.]
 (set: $emocao3 to &quot;&quot;)
 (set: $emocao4 to &quot;&quot;)
 (set: $emocao5 to &quot;&quot;)
-</tw-passagedata><tw-passagedata pid="2" name="Cemiterio" tags="" position="900,400" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Chegas ao Cemitério dos Prazeres.]
-&lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/cemiterio_prazeres1.jpg&quot;/&gt;
-
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Cemiterio" tags="" position="900,400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Chegas ao Cemitério dos Prazeres.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/cemiterio_prazeres1.jpg&quot;/&gt;
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O silêncio é espesso...
 O ar parece suspenso entre memórias que não são tuas.
 Os passos fazem eco.  
@@ -49,7 +79,9 @@ Há beleza, há silêncio, há peso. Nem tudo é tristeza — mas nada é leve.]
 Como te sentes neste lugar?
 [[😢 Triste-&gt;CemiterioTriste]]
 [[😐 Indiferente-&gt;CemiterioIndiferente]]
-[[😊 Em paz-&gt;CemiterioPaz]]</tw-passagedata><tw-passagedata pid="3" name="CemiterioTriste" tags="" position="700,600" size="100,100">(set: $emocao1 to &quot;triste&quot;)
+[[😊 Em paz-&gt;CemiterioPaz]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="CemiterioTriste" tags="" position="700,600" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao1 to &quot;triste&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O peso do lugar assentou-te nos ombros como um casaco velho. Era como se estivesses a carregar memórias que nem eram tuas.]
 
 (border: &quot;dotted&quot;)[//Neste silêncio, até os sentimentos ganham eco.//]
@@ -57,7 +89,10 @@ Como te sentes neste lugar?
 67% dos utilizadores selecionaram a mesma resposta.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="4" name="CemiterioIndiferente" tags="" position="900,600" size="100,100">(set: $emocao1 to &quot;indiferente&quot;)
+[[Continuar-&gt;Parque]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="CemiterioIndiferente" tags="" position="900,600" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao1 to &quot;indiferente&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Caminhaste entre túmulos como quem percorre um corredor sem portas. Nada te tocou — e talvez isso te tenha surpreendido.]
 
 (border: &quot;dotted&quot;)[//&quot;Nem sempre os lugares nos tocam – e está tudo bem.&quot;//]
@@ -66,7 +101,9 @@ Como te sentes neste lugar?
 
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="5" name="CemiterioPaz" tags="" position="1100,600" size="100,100">(set: $emocao1 to &quot;em paz&quot;)
+[[Continuar-&gt;Parque]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="CemiterioPaz" tags="" position="1100,600" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao1 to &quot;em paz&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[No silêncio entre as lápides, sentiste que o mundo te deixou respirar. Como se ali, no meio da morte, tivesses encontrado descanso.]
 
 (border: &quot;dotted&quot;)[//Aqui repousa a calma, entre ciprestes e memórias.//]
@@ -75,8 +112,10 @@ Como te sentes neste lugar?
 
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Parque]]</tw-passagedata><tw-passagedata pid="6" name="Parque" tags="" position="900,800" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[O verde à tua volta respira devagar.]
-&lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/69c145df3cad56166d7bc3ab57624057.jpg&quot;/&gt;
+[[Continuar-&gt;Parque]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Parque" tags="" position="900,800" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[O verde à tua volta respira devagar.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/69c145df3cad56166d7bc3ab57624057.jpg&quot;/&gt;
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O chão é mole, o vento empurra folhas com leveza, e por um instante, a cidade parece ficar lá em baixo, distante. 
 
 Aqui, há espaço para ti — se quiseres ocupá-lo.]
@@ -84,7 +123,9 @@ Aqui, há espaço para ti — se quiseres ocupá-lo.]
 Como te sentes neste lugar?
 [[🧘‍♂️ Calmo-&gt;ParqueCalmo]]
 [[😌 Sereno-&gt;ParqueSereno]]
-[[🤷‍♀️ Nada especial-&gt;ParqueNadaEspecial]]</tw-passagedata><tw-passagedata pid="7" name="ParqueCalmo" tags="" position="900,1000" size="100,100">(set: $emocao2 to &quot;calmo&quot;)
+[[🤷‍♀️ Nada especial-&gt;ParqueNadaEspecial]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="ParqueCalmo" tags="" position="900,1000" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao2 to &quot;calmo&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[No verde do parque, respiraste fundo. O corpo abrandou, como se soubesse que podia.]
 
 (border:&quot;dotted&quot;)[//A natureza não julga: apenas acolhe.//]
@@ -92,24 +133,30 @@ Como te sentes neste lugar?
 58% sentiram-se assim.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="8" name="Miradouro" tags="" position="900,1200" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Do topo da colina, a cidade abre-se como uma carta que alguém escreveu para ti.]]
-&lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/caption.jpg&quot;/&gt;
+[[Continuar-&gt;Miradouro]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Miradouro" tags="" position="900,1200" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Do topo da colina, a cidade abre-se como uma carta que alguém escreveu para ti.]]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/caption.jpg&quot;/&gt;
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O sol desenha reflexos nos telhados, turistas riem ao fundo, e mesmo assim — há uma solidão suspensa no ar.  
 Aqui tudo parece pequeno, mesmo as tuas emoções.]
 
 Como te sentes aqui?
 [[😄 Feliz-&gt;MiradouroFeliz]]
 [[😶 Neutro-&gt;MiradouroNeutro]]
-[[😞 Desconfortável-&gt;MiradouroDesconfortavel]]</tw-passagedata><tw-passagedata pid="9" name="Metro" tags="" position="900,1600" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Desceste ao ventre da cidade.]
-&lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/1024.jpg&quot;/&gt;
+[[😞 Desconfortável-&gt;MiradouroDesconfortavel]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Metro" tags="" position="900,1600" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Desceste ao ventre da cidade.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/1024.jpg&quot;/&gt;
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O som metálico dos comboios, os passos apressados, os olhares evitados. Tudo pulsa — mas ninguém se olha.  
 Há um ritmo aqui que nem sempre é o teu. E no meio dele, tu.]
 
 Como te sentes aqui?
 [[😰 Ansioso-&gt;BaixaAnsioso]]
 [[😴 Cansado-&gt;BaixaCansado]]
-[[😎 Tranquilo-&gt;BaixaTranquilo]]</tw-passagedata><tw-passagedata pid="10" name="Cais" tags="" position="900,2000" size="100,100">(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Estás no Cais do Sodré.]
-&lt;img src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/unnamed.jpg&quot;/&gt;
+[[😎 Tranquilo-&gt;BaixaTranquilo]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Cais" tags="" position="900,2000" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Estás no Cais do Sodré.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/unnamed.jpg&quot;/&gt;
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[A cidade pulsa. Sons, cheiros, vozes. A música escapa dos bares como vapor quente.  
 Cada rosto parece uma história a acontecer — e tu és um entre muitos.  
 
@@ -119,7 +166,9 @@ Como te sentes aqui?
 [[🤩 Entusiasmado-&gt;CaisEntusiasmado]]
 [[😵 Confuso-&gt;CaisConfuso]]
 [[😐 Neutro-&gt;CaisNeutro]]
-</tw-passagedata><tw-passagedata pid="11" name="ParqueNadaEspecial" tags="" position="1100,1000" size="100,100">(set: $emocao2 to &quot;nada especial&quot;)
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="11" name="ParqueNadaEspecial" tags="" position="1100,1000" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao2 to &quot;nada especial&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O parque não te disse nada — e talvez isso também seja importante. Nem tudo tem de tocar.]
 
 (border:&quot;dotted&quot;)[//Nem sempre estamos sintonizados com o lugar – e está tudo bem.//]
@@ -127,7 +176,9 @@ Como te sentes aqui?
 10% disseram o mesmo.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="12" name="ParqueSereno" tags="" position="700,1000" size="100,100">(set: $emocao2 to &quot;sereno&quot;)
+[[Continuar-&gt;Miradouro]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="ParqueSereno" tags="" position="700,1000" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao2 to &quot;sereno&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[No silêncio natural, houve espaço para um alívio que não sabias que procuravas. Um espaço sem exigência.]
 
 (border: &quot;dotted&quot;)[//Há paz na harmonia natural.//]
@@ -135,7 +186,9 @@ Como te sentes aqui?
 32% concordam contigo.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Miradouro]] </tw-passagedata><tw-passagedata pid="13" name="MiradouroFeliz" tags="" position="700,1400" size="100,100">(set: $emocao3 to &quot;feliz&quot;)
+[[Continuar-&gt;Miradouro]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="MiradouroFeliz" tags="" position="700,1400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao3 to &quot;feliz&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Do alto, deixaste-te contagiar pela luz. Por instantes, foste leve.]
 
 (border:&quot;dotted&quot;)[&quot;//Sentir alegria aqui é como abrir o peito ao horizonte.//&quot;]
@@ -143,7 +196,9 @@ Como te sentes aqui?
 72% sentiram o mesmo.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="14" name="MiradouroNeutro" tags="" position="900,1400" size="100,100">(set: $emocao3 to &quot;neutro&quot;)
+[[Continuar-&gt;Metro]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="MiradouroNeutro" tags="" position="900,1400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao3 to &quot;neutro&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Do alto, viste tudo… mas nada se moveu por dentro. Um miradouro com vista, mas sem eco.]
 
 (border:&quot;dotted&quot;)[//&quot;A neutralidade também é válida.&quot;//]
@@ -151,7 +206,9 @@ Como te sentes aqui?
 19% escolheram esta emoção.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="15" name="MiradouroDesconfortavel" tags="" position="1100,1400" size="100,100">(set: $emocao3 to &quot;desconfortável&quot;)
+[[Continuar-&gt;Metro]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="MiradouroDesconfortavel" tags="" position="1100,1400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao3 to &quot;desconfortável&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Mesmo com a cidade aberta à frente, algo te pesou no peito. A beleza não foi suficiente para te aliviar.]
 
 (border:&quot;dotted&quot;)[//&quot;Às vezes, até os lugares bonitos nos pesam.&quot;//]
@@ -159,7 +216,9 @@ Como te sentes aqui?
 9% sentiram o mesmo.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Metro]] </tw-passagedata><tw-passagedata pid="16" name="BaixaAnsioso" tags="" position="700,1800" size="100,100">(set: $emocao4 to &quot;ansioso&quot;)
+[[Continuar-&gt;Metro]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="BaixaAnsioso" tags="" position="700,1800" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao4 to &quot;ansioso&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[No subsolo da cidade, a ansiedade apertou-te o peito. Cada som, cada passo, parecia empurrar-te mais para dentro.]
 
 (border:&quot;dotted&quot;)[//&quot;O ruído urbano amplifica as tensões invisíveis.&quot;//]
@@ -167,7 +226,9 @@ Como te sentes aqui?
 63% sentiram-se assim.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="17" name="BaixaCansado" tags="" position="900,1800" size="100,100">(set: $emocao4 to &quot;cansado&quot;)
+[[Continuar-&gt;Cais]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="BaixaCansado" tags="" position="900,1800" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao4 to &quot;cansado&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O movimento da Baixa arrastou-te. Foste contigo próprio em piloto automático, à deriva no fluxo da cidade.]
 
 (border:&quot;dotted&quot;)[//&quot;O movimento constante esgota.&quot;//]
@@ -175,7 +236,9 @@ Como te sentes aqui?
 24% também se sentiram assim.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="18" name="BaixaTranquilo" tags="" position="1100,1800" size="100,100">(set: $emocao4 to &quot;tranquilo&quot;)
+[[Continuar-&gt;Cais]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="BaixaTranquilo" tags="" position="1100,1800" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao4 to &quot;tranquilo&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Mesmo entre multidões, encontraste o teu próprio ritmo. Andavas por ali como quem dança em silêncio.]
 
 (border:&quot;dotted&quot;)[//&quot;Mesmo no caos, há quem encontre o seu ritmo.&quot;//]
@@ -183,7 +246,9 @@ Como te sentes aqui?
 13% disseram o mesmo.
 
 (text-size:0.7)[Volta ao SmartGuide e avança para o próximo ponto antes de continuares.]
-[[Continuar-&gt;Cais]] </tw-passagedata><tw-passagedata pid="19" name="CaisEntusiasmado" tags="" position="700,2200" size="100,100">(set: $emocao5 to &quot;entusiasmado&quot;)
+[[Continuar-&gt;Cais]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="CaisEntusiasmado" tags="" position="700,2200" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao5 to &quot;entusiasmado&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[No Cais do Sodré, foste atravessado por energia crua. Quase dançaste com a cidade. Era ruído, mas era teu.]
 
 (border:&quot;dotted&quot;)[//&quot;Há lugares que nos ligam à energia bruta da cidade.&quot;//]
@@ -191,15 +256,19 @@ Como te sentes aqui?
 44% disseram o mesmo.
 
 (text-size:0.7)[Estás pronto para veres o teu resumo?]
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="20" name="CaisConfuso" tags="" position="900,2200" size="100,100">(set: $emocao5 to &quot;confuso&quot;)
-(font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)Entre sons e multidão, perdeste-te um pouco de ti mesmo. Era demasiado, mesmo quando sabias onde estavas.
+[[Ver Resumo-&gt;Resumo]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="CaisConfuso" tags="" position="900,2200" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao5 to &quot;confuso&quot;)
+(font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[Entre sons e multidão, perdeste-te um pouco de ti mesmo. Era demasiado, mesmo quando sabias onde estavas.]
 
 (border:&quot;dotted&quot;)[//&quot;Às vezes, a multidão faz mais barulho dentro do que fora.&quot;//]
 
 47% sentiram-se assim.
 
 (text-size:0.7)[Estás pronto para ver o teu resumo?]
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="21" name="CaisNeutro" tags="" position="1100,2200" size="100,100">(set: $emocao5 to &quot;neutro&quot;)
+[[Ver Resumo-&gt;Resumo]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="CaisNeutro" tags="" position="1100,2200" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(set: $emocao5 to &quot;neutro&quot;)
 (font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O Cais do Sodré foi apenas mais um lugar. Estavas noutro tempo, noutro tom.]
 
 (border:&quot;dotted&quot;)[//&quot;Navegar entre extremos também é válido.&quot;//]
@@ -207,41 +276,68 @@ Como te sentes aqui?
 9% escolheram esta emoção.
 
 (text-size:0.7)[Estás pronto para ver o teu resumo?]
-[[Ver Resumo-&gt;Resumo]]</tw-passagedata><tw-passagedata pid="22" name="Resumo" tags="" position="900,2400" size="100,100">&lt;div class=&quot;fade-in&quot;&gt;
-(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+[[Ver Resumo-&gt;Resumo]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Resumo" tags="" position="900,2400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+{
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;entusiasmado&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Começaste no silêncio e terminaste com os pés a dançar. Algo despertou em ti ao longo do caminho.&quot;
 ]
-(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;confuso&quot;)[
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;confuso&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Do silêncio à confusão — o percurso não deu respostas, mas trouxe movimento.&quot;
 ]
-(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;neutro&quot;)[
+(if: $emocao1 is &quot;triste&quot; and $emocao5 is &quot;neutro&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;A tristeza inicial dissipou-se em neutralidade. Talvez não tenhas perdido nada, apenas deixado ir.&quot;
 ]
-(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;entusiasmado&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Saíste da apatia e chegaste à vibração. A cidade não ficou indiferente a ti.&quot;
 ]
-(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;confuso&quot;)[
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;confuso&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Começaste neutro e acabaste confuso — às vezes, o caminho só agita o que estava calmo.&quot;
 ]
-(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;neutro&quot;)[
+(if: $emocao1 is &quot;indiferente&quot; and $emocao5 is &quot;neutro&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;De uma ponta à outra, o mundo passou por ti sem se fixar. Mas mesmo isso é uma forma de sentir.&quot;
 ]
-(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;entusiasmado&quot;)[
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;entusiasmado&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Partiste sereno, chegaste vibrante. O mundo não te engoliu — tu é que aceitaste o convite.&quot;
 ]
-(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;confuso&quot;)[
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;confuso&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Saíste calmo e chegaste desorientado. Talvez o percurso tenha mexido com mais do que esperavas.&quot;
 ]
-(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;neutro&quot;)[
+(if: $emocao1 is &quot;em paz&quot; and $emocao5 is &quot;neutro&quot;)+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[
 &quot;Começaste em harmonia e terminaste sem ruído. Um ciclo discreto, mas completo.&quot;
 ]
+}
 
 Cada passo teu foi uma resposta. Talvez não ao espaço — mas a ti próprio.
 Obrigado por participares nesta simulação.
 
 [[Recomeçar|Start]]
 &lt;/div&gt;
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="23" name="Parque" tags="" position="900,800" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[O verde à tua volta respira devagar.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/69c145df3cad56166d7bc3ab57624057.jpg&quot;/&gt;
+(font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O chão é mole, o vento empurra folhas com leveza, e por um instante, a cidade parece ficar lá em baixo, distante. 
+
+Aqui, há espaço para ti — se quiseres ocupá-lo.]
+
+Como te sentes neste lugar?
+[[🧘‍♂ Calmo-&gt;ParqueCalmo]]
+[[😌 Sereno-&gt;ParqueSereno]]
+[[🤷‍♀ Nada especial-&gt;ParqueNadaEspecial]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Cemiterio" tags="" position="900,400" size="100,100">&lt;div class=&quot;base&quot;&gt;
+(font:&quot;Courier New&quot;)+(text-style:&quot;expand&quot;)[Chegas ao Cemitério dos Prazeres.]
+&lt;img class=&quot;base_img&quot; src=&quot;https://raw.githubusercontent.com/cucumberswithmayo/medialocativos/refs/heads/main/cemiterio_prazeres1.jpg&quot;/&gt;
+
+(font:&quot;Courier New&quot;)+(textstyle:&quot;buoy&quot;)[O silêncio é espesso...
+O ar parece suspenso entre memórias que não são tuas.
+Os passos fazem eco.  
+Há beleza, há silêncio, há peso. Nem tudo é tristeza — mas nada é leve.]
+
+Como te sentes neste lugar?
+[[😢 Triste-&gt;CemiterioTriste]]
+[[😐 Indiferente-&gt;CemiterioIndiferente]]
+[[😊 Em paz-&gt;CemiterioPaz]]
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
